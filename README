@@ -1,0 +1,12 @@
+Ce script permet de deployer la clé publique de l'host vers d'autre machines qu'on a préablement ajouter dans le fichier inventaire.
+Pour ce faire cloner le repo puis créer un fichier de configuration.
+
+Exemple 
+/etc/ansible/hosts : 
+
+[all]
+PARK8S001MP ansible_host=10.0.2.52 # ip=10.0.2.52
+PARK8S002MP ansible_host=10.0.2.53 # ip=10.0.2.53
+PARK8S001WP ansible_host=10.0.2.54 # ip=10.0.2.54
+PARK8S002WP ansible_host=10.0.2.55 # ip=10.0.2.55
+PARK8S003WP ansible_host=10.0.2.56 # ip=10.0.2.56
